@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="shortcut icon" href="/img/avatar.ico" class="icon-p" />
+    <title>Signup</title>
+</head>
+
+<body class="signup">
+    <header class="ini">
+        <h3>Signup to Pals</h3>
+    </header>
+    <div class="signup-box">
+        <span class="avatar"></span>
+        <h1>Sign up Here</h1>
+        div=err
+        <form method="POST" action='/users/signup'>
+            <label for="name">Name</label>
+            <input type="text" placeholder="John" name="name">
+            <label for="lastName">LastName</label>
+            <input type="text" placeholder="Conor" name="lastName">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" name="username">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Email" name="email">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" name="password">
+            <input type="submit" value="Sign up">
+            <a href="signin">Have An account?</a>
+        </form>
+    </div>
+</body>
+
+</html>

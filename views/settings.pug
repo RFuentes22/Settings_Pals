@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Settings
+  body
+    section#banner(data-video='img/banner')
+      .inner
+        header
+          h1 Settings
+      video(autoplay='', loop='')
+        source(src='img/banner.mp4', type='video/mp4')
+        source(src='img/banner.webm', type='video/webm')
+    main#main
+      form.formUpdate(method='PUT', action='/settings' name='update')
+        
+        .item
+          label(for='name') Name
+          input(type='text', name='name' value=data.name)
+        .item
+          label(for='lastName') LastName
+          input(type='text', name='lastName' value=data.lastName)
+        #hide.item
+          label(for='username') Username
+          input(type='text', name='username' value=data.username)
+        .item
+          label(for='email') Email
+          input(type='email', name='email' value=data.email)
+        .item
+          label(for='password') Password
+          input(type='password', placeholder='Enter New Password', name='password')
+        .submit
+          button(type='submit') Save changes 
+          
+script(src="./script/main.js")
